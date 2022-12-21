@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="web.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <a href="web.html"> <button class="button"> Home</button></a>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="button">
+                 About
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button>Management</button>
+                  <button>Director</button>
+                  <button>Academic Director</button>
+                  <button>Principal</button>
+                  <button>Vision & Mission</button>
+                  <button>Quality Policy</button>
+                  <a href="overview.html"><button>Overview</button></a>
+                </div>
+              </div>
+    
+              <div class="dropdown">
+                <button class="button">
+                  Admission
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button>Help Desk</button>
+                  <a href="admission.html">   
+                    <button>Admission Details</button>
+                </a>
+                  <button>Fee Structure</button>
+                </div>
+              </div>
+
+          <div class="dropdown">
+            <button class="button">
+              Courses
+                <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>B.tech</button>
+              <button>MCA</button>
+              <button>MBA</button>
+              <button>Polytechnic</button>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="button">
+              Departments
+              <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>Dept.of Computer Science & Engineering</button>
+              <button>Dept.of Electrical & Electronics Engineering</button>
+              <button>Dept.of Civil Engineering</button>
+              <button>Dept.of Mechanical Engineering</button>
+              <button>Dept.of Management Studies</button>
+              <button>Physical Education</button>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="button">
+             Contact
+              <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+                <a href="contact.html">  <button>Contact Details</button></a>
+            
+              <button>Feedback / Events</button>
+            </div>
+          </div>
+
+
+          <!-- other dropdowns -->
+        </div>
+      </nav>
+
+      <script>
+        const toggleMenu = () => {
+          document.body.classList.toggle("open");
+        };
+      </script>
+    </div>
+    <div class="header"><h1 >contact Details</h1></div>
+    
+   
+
+<div class="contact-details">
+    <h2>Contact Details</h2>
+<h3>Sree Narayana Guru Institute of Science and Technology</h3>
+    <p><b>Address</b>: Mannam, Manjali (P. O.),
+        North Paravur, Ernakulam,
+        Kerala, India  683520</p>
+
+  </div>
+
+  <div class="contact-details">
+
+    <p><b>Phone</b>:  0484 -2887000, 0484 2445252, 0484 -2440220</p>
+    <p><b>Email</b>: sngist@sngist.org</p>
+    <p><b>Mobile</b>: 9961792220, 9947281122</p>
+  </div>
+  </body>
+</html>

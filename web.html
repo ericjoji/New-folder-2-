@@ -1,0 +1,269 @@
+<html>
+  <head>
+    <title>SNGIST</title>
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <a href="web.html"> <button class="button"> Home</button></a>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="button">
+                 About
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button>Management</button>
+                  <button>Director</button>
+                  <button>Academic Director</button>
+                  <button>Principal</button>
+                  <button>Vision & Mission</button>
+                  <button>Quality Policy</button>
+                  <a href="overview.html"><button>Overview</button></a>
+                </div>
+              </div>
+    
+              <div class="dropdown">
+                <button class="button">
+                  Admission
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button>Help Desk</button>
+                  <a href="admission.html">   
+                    <button>Admission Details</button>
+                </a>
+                  <button>Fee Structure</button>
+                </div>
+              </div>
+
+          <div class="dropdown">
+            <button class="button">
+              Courses
+                <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>B.tech</button>
+              <button>MCA</button>
+              <button>MBA</button>
+              <button>Polytechnic</button>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="button">
+              Departments
+              <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>Dept.of Computer Science & Engineering</button>
+              <button>Dept.of Electrical & Electronics Engineering</button>
+              <button>Dept.of Civil Engineering</button>
+              <button>Dept.of Mechanical Engineering</button>
+              <button>Dept.of Management Studies</button>
+              <button>Physical Education</button>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="button">
+             Contact
+              <img src="chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+                <a href="contact.html">  <button>Contact Details</button></a>
+            
+              <button>Feedback / Events</button>
+            </div>
+          </div>
+
+
+          <!-- other dropdowns -->
+        </div>
+      </nav>
+
+      <script>
+        const toggleMenu = () => {
+          document.body.classList.toggle("open");
+        };
+      </script>
+    </div>
+    <div class="logo"></div>
+ 
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="sngist.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="WhatsApp Image 2022-12-21 at 1.36.08 PM.jpeg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="WhatsApp Image 2022-12-21 at 1.26.10 PM.jpeg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            </script>
+            
+
+
+<div class="card">
+    <section class="page-contain">
+        <a href="#" class="data-card" style="background-image: url('WhatsApp\ Image\ 2022-12-21\ at\ 3.29.56\ PM.jpeg'); background-size: cover; background-repeat: no-repeat;">
+          <h4>International Yoga Day</h4>
+          <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+          <span class="link-text">
+            View Information
+            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+      </svg>
+          </span>
+        </a>
+
+        <a href="#" class="data-card">
+          <!-- <h3>12,000</h3> -->
+          <h4>B.Tech – Admission – 2022</h4>
+          <p>Etiam porta sem malesuada.</p>
+          <span class="link-text">
+            View Information
+            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+      </svg>
+          </span>
+        </a>
+
+        <a href="#" class="data-card">
+            <!-- <h3>270</h3> -->
+            <h4>MCA – Admission – 2022</h4>
+            <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+            <span class="link-text">
+                View Information
+              <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+        </svg>
+            </span>
+          </a>
+
+          <a href="#" class="data-card">
+            <!-- <h3>270</h3> -->
+            <h4>MBA – Admission – 2022</h4>
+            <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+            <span class="link-text">
+                View Information
+              <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+        </svg>
+            </span>
+          </a>
+      </section>
+</div>
+<!-- <div class="place">
+<h1>Training and Placement Cell is an integral part of the college. The college has a fully equipped infrastructure. Training activities are organized throughout the year in an effort towards preparing the prospective students for the campus selection programmes..</h1>
+</div> -->
+<!-- 
+    <div class="footer">
+<div class="footer1">
+    <h1>SNGIST</h1>
+    <p>
+        SNGIST was established in the year 2003 by Guru Deva Trust as part of its vision to create centers of excellence in higher learning. The college has excellent pool of faculty members with academic and research experience.
+    </p>
+</div>
+<div class="footer2">
+    <h1> OUR VISION </h1>
+    <p>To ensure a holistic transformation of students into professionals who will be the creative technocrats and corporate leaders with social responsibility made possible through an educational system that builds competence, confidence and compassion.</p>
+</div>
+<div class="footer3">
+    <h1>HOW TO REACH US</h1>
+    <p>Mannam, Manjali (P. O.)
+        North Paravur, Ernakulam
+        Kerala, India - 683520</p>
+    <p> +91 484 2887000</p>
+    <p> +91 484 2445252</p>
+</div>
+    </div> -->
+
+    <footer class="footer5">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <!-- <ul class="social-icon">
+          <li class="social-icon_item"><a class="social-icon_link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon_item"><a class="social-icon_link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon_item"><a class="social-icon_link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon_item"><a class="social-icon_link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul> -->
+        <div class="footer">
+        <div class="footer1">
+            <h1>SNGIST</h1>
+            <p>
+                SNGIST was established in the year 2003 by Guru Deva Trust as part of its vision to create centers of excellence in higher learning. The college has excellent pool of faculty members with academic and research experience.
+            </p>
+        </div>
+        <div class="footer2">
+            <h1> OUR VISION </h1>
+            <p>To ensure a holistic transformation of students into professionals who will be the creative technocrats and corporate leaders with social responsibility made possible through an educational system that builds competence, confidence and compassion.</p>
+        </div>
+        <div class="footer3">
+            <h1>HOW TO REACH US</h1>
+            <p>Mannam, Manjali (P. O.)
+                North Paravur, Ernakulam
+                Kerala, India - 683520</p>
+            <p> +91 484 2887000</p>
+            <p> +91 484 2445252</p>
+        </div> </div>
+
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
